@@ -1,20 +1,117 @@
 <template>
   <header class="hero">
     <div class="header-text">
-      <h1>Volio</h1>
-      <h2>What does your portfolio say about you?</h2>
+      <div>
+        <h1>TEST TEST</h1>
+        <h2>TEST TEST TEST</h2>
+      </div>
+
+      
+      <div class="arrow" @click="deleteLayer()"><a href="#" class="arrowBtn1"><span class="arrowBtn2"></span></a> </div>
+
     </div>
+      <div class="layer" :class='{ layerClass: layerClass }'>
+      </div>
+    <div class="header-skills">
+      
+      <div class="header-skills-box">
+        <div>
+                  <h3>HTML</h3>
+        <h3>CSS</h3>
+        <h3>JAVASCRIPT</h3>
+        <h3>JQUERY</h3>
+        </div>
+        <div>
+                  <h3>SCSS</h3>
+        <h3>VUE</h3>
+        <h3>WORDPRESS</h3>
+        <h3>GSAP</h3>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
   </header>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      layerClass: false
+    }
+  },
+  methods: {
+    deleteLayer() {
+      this.layerClass = !this.layerClass;
+    }
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
 
 header {
 	width: 100%; min-height: 100vh;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
+
+.header-skills-box {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+
+    div:first-child {
+      margin-right: 30px;
+    }
+}
+
+.arrowBtn1 {
+  display: block;
+  transform: rotate(-90deg);
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  position: relative;
+}
+.arrowBtn1::before,
+.arrowBtn1::after,
+.arrowBtn2 {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  width: 13px;
+  height: 13px;
+  transform-origin: top left;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+}
+.arrowBtn1::before {
+  top: -1px;
+  animation: changeColor 1.5s infinite;
+}
+.arrowBtn1::after {
+  top: 11px;
+  animation: changeColor 1.5s .33s infinite;
+}
+.arrowBtn2 {
+  top: 23px;
+  animation: changeColor 1.5s .66s infinite;
+}@keyframes changeColor {
+  0% {opacity: 1}
+  50% {opacity: .3;}
+  100% {opacity: 1;}
+}
+
+
 
 .hero {
 background-color: #5100ff;
@@ -26,9 +123,38 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 }
 
 .header-text {
-  text-align:center;
-  margin: 0 0 13rem 0;
-  padding:0 5rem;
+  text-align:left;
+  width: 50vw;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  // margin: 0 0 13rem 0;
+  // padding:0 5rem;
+}
+
+// .arrow {
+//   width: 30px;
+//   height: 10px;
+// }
+
+h3 {
+  color: white;
+  text-shadow: 4px 4px 15px rgba(5, 5, 5, 0.5);
+}
+
+.layer {
+width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background: #adadad;
+    transition: all .5s;
+}
+
+.layerClass {
+  width: 0;
+  transition: all .5s;
 }
 
 @media (max-width: 560px) {
