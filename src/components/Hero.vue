@@ -2,32 +2,27 @@
   <header class="hero">
     <div class="header-text">
       <div>
-        <h1>TEST TEST</h1>
+        <h1 data-aos="fade-up-left">TEST TEST</h1>
         <h2>TEST TEST TEST</h2>
+       
+
       </div>
 
       
       <div class="arrow" @click="deleteLayer()"><a href="#" class="arrowBtn1"><span class="arrowBtn2"></span></a> </div>
 
     </div>
+     
       <div class="layer" :class='{ layerClass: layerClass }'>
+         <vue-typer v-if="isTyping" class="title-main" :repeat='0' pre-type-delay='500' text='Hello World! I was registered locally!'></vue-typer><br><br>
+         <vue-typer v-if="isTyping" class="title-main" :repeat='0' pre-type-delay='3000' text='My skills are:'></vue-typer>
+         
+
       </div>
     <div class="header-skills">
       
       <div class="header-skills-box">
-        <div>
-                  <h3>HTML</h3>
-        <h3>CSS</h3>
-        <h3>JAVASCRIPT</h3>
-        <h3>JQUERY</h3>
-        </div>
-        <div>
-                  <h3>SCSS</h3>
-        <h3>VUE</h3>
-        <h3>WORDPRESS</h3>
-        <h3>GSAP</h3>
-        </div>
-
+        
       </div>
     </div>
 
@@ -37,17 +32,33 @@
   </header>
 </template>
 <script>
+import { VueTyper } from 'vue-typer'
+
+
 export default {
+ components: {
+    // ES6; property shorthand + Vue should automatically dasherize the key for us
+    VueTyper
+
+
+ },
+
+
+       
   data() {
     return {
-      layerClass: false
+      layerClass: true,
+      isTyping: false
     }
   },
   methods: {
     deleteLayer() {
       this.layerClass = !this.layerClass;
-    }
-  }
+      this.isTyping = true
+    },
+   
+
+  },
 }
 </script>
 
@@ -71,6 +82,15 @@ header {
     }
 }
 
+.vue-typer .custom.char.typed {
+  color: #009688 !important;
+}
+
+.title-main {
+  font-size: 55px;
+  font-family: FuturaHeavy, "Helvetica Neue", Helvetica, sans-serif;
+
+}
 .arrowBtn1 {
   display: block;
   transform: rotate(-90deg);
@@ -143,12 +163,17 @@ h3 {
   text-shadow: 4px 4px 15px rgba(5, 5, 5, 0.5);
 }
 
+span.vue-typer {
+      position: absolute;
+    margin-top: 200px;
+}
+
 .layer {
-width: 50vw;
+width: 100vw;
     height: 100vh;
     position: absolute;
     right: 0;
-    background: #adadad;
+    background: gray;
     transition: all .5s;
 }
 
