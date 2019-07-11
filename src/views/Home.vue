@@ -52,7 +52,7 @@
             </ul>
           </div>
         </div>
-        <div class="item work">
+        <div class="item work phone">
           <div class="inner">
             <h2>June 2018-September 2018</h2>
             <h3>Front end developer</h3>
@@ -73,7 +73,7 @@
             </ul>
           </div>
         </div>
-        <div class="item work">
+        <div class="item work phone">
           <div class="inner">
             <h2>
               May
@@ -98,10 +98,12 @@
         </div>
       </Flickity>
     </Card>
-    <Timeline/>
 
     <Card id="explain" class="light">
-      <h3 slot="cardTitle">App Shmap</h3>
+      <div slot="cardContent">
+        <Timeline/>
+      </div>
+      <h3 slot="cardTitle">Education</h3>
     </Card>
   </main>
 </template>
@@ -216,7 +218,22 @@ export default {
     text-align: left;
   }
 }
-
+.item {
+  img {
+    transition: all 0.4s;
+  }
+}
+.item:hover {
+  img {
+    filter: grayscale(1.4);
+    transform: scale(1.2);
+    transition: all 0.4s;
+  }
+  .under-card {
+    transform: translateY(0) !important;
+    transition: transform 1s ease-in-out;
+  }
+}
 .content p span {
   color: $yellow;
   margin-right: 1rem;

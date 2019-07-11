@@ -56,15 +56,16 @@ export default {
   padding-left: 30px;
   transform: translateY(200px);
   text-align: left;
+  opacity: 0.9;
   transition: transform 1s ease-in-out;
 
   h4 {
     font-size: 16px;
     color: #ffbc05;
     padding: 7px 0;
-    cursor: pointer;
     text-align: center;
   }
+
   ul {
     text-align: left;
     position: relative;
@@ -76,11 +77,15 @@ export default {
     align-items: center;
     margin-left: 15px;
 
+    span {
+      color: #ffbc05;
+    }
+
     &:after {
       width: 8px;
       height: 8px;
       position: absolute;
-      background: #ffbc05;
+      background: white;
       border-radius: 50%;
       left: 0;
     }
@@ -103,7 +108,7 @@ export default {
     color: white;
   }
   h5 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .center {
@@ -116,10 +121,6 @@ export default {
 .fullHeight {
   transform: translateY(0) !important;
   transition: transform 1s ease-in-out;
-
-  h4 {
-    visibility: hidden;
-  }
 }
 </style>
 

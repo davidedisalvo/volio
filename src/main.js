@@ -6,6 +6,8 @@ import 'aos/dist/aos.css';
 import { VueTyper } from 'vue-typer';
 import VueParticles from 'vue-particles';
 
+AOS.init();
+
 Vue.use(VueParticles);
 
 Vue.config.productionTip = false;
