@@ -2,24 +2,33 @@
   <footer>
     <div class="credits">
       <div class="row">
-        <p><em>About<br />—</em>Volio is a Portfolio Boilerplate built using Vue. Utilizing <span class="tooltip t00">Flickity</span>, Sass, <span class="tooltip t01">Webpack</span>, and Vue-Router, this boilerplate has <span class="tooltip t02">everything</span> you need to start building a <span class="tooltip t03">beautiful</span>, modern portfolio.
+        <p>
+          <em>
+            About
+            <br>—
+          </em>
+          Master's degree in language philosophy with passion for travel and sailing. My long term goal is become a digital nomad and live on a sailing boat with a pirate flag.
         </p>
-        <p><em>Get in touch<br />—</em>
-        <a href="mailto:talktojustintoday@gmail.com" title="Email">
-          <span class="highlighter">Email</span>
-        </a>
-        <br />
-        <a href="https://twitter.com/justinformentin" title="@justinformentin on Twitter" target="_blank">
-          <span class="highlighter">Twitter</span>
-        </a>
-        <br />
-        <a href="https://github.com/justinformentin" title="GitHub" target="_blank">
-          <span class="highlighter">GitHub</span>
-        </a>
-        <br />
-        <a href="https://linkedin.com/in/justinformentin" title="LinkedIn" target="_blank">
-          <span class="highlighter">LinkedIn</span>
-        </a>
+        <p>
+          <em>
+            Get in touch
+            <br>—
+          </em>
+          <a href="mailto:davidesimone.disalvo@gmail.com" title="Email">
+            <span class="highlighter">Email</span>
+          </a>
+          <br>
+          <a href="https://github.com/davidedisalvo" title="GitHub" target="_blank">
+            <span class="highlighter">GitHub</span>
+          </a>
+          <br>
+          <a
+            href="https://www.linkedin.com/in/davide-di-salvo-75aa16a2/"
+            title="LinkedIn"
+            target="_blank"
+          >
+            <span class="highlighter">LinkedIn</span>
+          </a>
         </p>
       </div>
     </div>
@@ -27,29 +36,28 @@
 </template>
 
 <style lang="scss" scoped>
-
-@import
-'../scss/variables';
+@import "../scss/variables";
 
 .social-icon {
-  max-width: 30px; 
+  max-width: 30px;
   max-height: 30px;
 
-	&:hover #twitterPath {
-		fill: #311B92;
-	}
+  &:hover #twitterPath {
+    fill: #311b92;
+  }
 }
 
 footer {
   padding: 5% 0;
   margin: auto 0;
   display: flex;
-  align-content:center;
-	justify-content: space-between;
+  align-content: center;
+  justify-content: space-between;
 }
 
 svg {
-	width: 300px; height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .credits {
@@ -57,45 +65,46 @@ svg {
 }
 
 .row {
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
-  align-content:center;
-	justify-content: flex-start;
+  align-content: center;
+  justify-content: flex-start;
 }
 
 p {
-	font-family: $mono;
-	font-size: 1rem;
-	min-width: 200px;
-	max-width: 540px;
+  font-family: $mono;
+  font-size: 1rem;
+  min-width: 200px;
+  max-width: 540px;
 }
 
 footer .row p:nth-child(1) {
-	margin-right: 5vw;
+  margin-right: 5vw;
 }
 
 em {
-	display: block;
-	font-weight: normal;
-	font-style: normal;
-	color: $text-third;
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+  color: $text-third;
 }
 
 .row:last-child p a {
-	margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .tooltip {
   display: inline-block;
   position: relative;
   cursor: help;
-  transition: color 0.15s cubic-bezier(.25, .46, .45, .94);
+  transition: color 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   &::before {
     content: "";
     display: block;
-    position: absolute; top: 90%;
-    background-color: hsla(240,20%,80%, 0.5);
+    position: absolute;
+    top: 90%;
+    background-color: hsla(240, 20%, 80%, 0.5);
     height: 2px;
     width: 100%;
   }
@@ -103,10 +112,11 @@ em {
   &::after {
     display: inline-block;
     position: absolute;
-    left: 50%; bottom: 0;
+    left: 50%;
+    bottom: 0;
     opacity: 0;
-    background: linear-gradient(130deg, hsl(180,10%,99%), hsl(180,20%,96%));
-    box-shadow: 0 10px 60px hsla(320,30%,40%, 0.2);
+    background: linear-gradient(130deg, hsl(180, 10%, 99%), hsl(180, 20%, 96%));
+    box-shadow: 0 10px 60px hsla(320, 30%, 40%, 0.2);
     padding: 16px;
     border-radius: 2px;
     font: 14px/1.25 $body;
@@ -114,32 +124,32 @@ em {
     text-align: center;
     pointer-events: none;
     transform: translate(-50%, -24px);
-    transition: all 0.15s cubic-bezier(.25, .46, .45, .94);
+    transition: all 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     will-change: transform, opacity;
   }
 
   &.t00::after {
     width: 120px;
-    content: 'That smooth swiping action.';
+    content: "That smooth swiping action.";
   }
 
   &.t01::after {
     width: 180px;
-    content: 'Bundle all of the things!';
+    content: "Bundle all of the things!";
   }
 
   &.t02::after {
     width: 130px;
-    content: 'Ok, not everything.';
+    content: "Ok, not everything.";
   }
 
   &.t03::after {
-  width: 130px;
-  content: 'I think so, anyway.';
+    width: 130px;
+    content: "I think so, anyway.";
   }
 
   &:hover {
-    color: hsl(234,10%,60%);
+    color: hsl(234, 10%, 60%);
   }
 
   &:hover::after {
@@ -154,11 +164,11 @@ em {
 
 @media (max-width: 960px) {
   footer {
-		flex-direction: column;
-		padding: 0 0 15vh 0;
+    flex-direction: column;
+    padding: 0 0 15vh 0;
     overflow: hidden;
-  } 
-	.row {
+  }
+  .row {
     margin: 2vh 10%;
   }
 }
@@ -167,9 +177,9 @@ em {
   .row {
     flex-direction: column;
   }
-  
+
   footer .row p:nth-child(1) {
-		margin-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -207,5 +217,4 @@ em {
     left: 50%;
   }
 }
-
 </style>

@@ -1,82 +1,124 @@
 <template>
   <main id="home">
-
     <Hero/>
 
     <Card id="quantyst" class="light card-mg">
-      <h3 slot='cardTitle'>Quantyst</h3>
-      <div slot='cardContent'>
-        <p><span>2014&mdash;2015</span>Quantyst is a data company. They utilize machine learning models to quantify the massive amounts of data on the internet. With Quantyst, you can analyze the sentiment of social media posts. Designed to have a modern look and feel, it has a cool color scheme. Much like the cold, lifeless servers that holds its data.</p>
-        <div class="buttons">
-          <router-link to="/quantyst/" class='button'><span class="highlighter">Case study</span><svg width="9" height="14" viewBox="0 0 9 14"><path stroke-width="1.8" d="M1.5 1.5L7 7l-5.5 5.5" fill="none" fill-rule="evenodd"/></svg></router-link>
+      <h3 slot="cardTitle">Portfolio</h3>
+      <div slot="cardContent"></div>
+      <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
+        <div class="item tablet">
+          <img src="../assets/nyt-repo.png" alt="Quantyst Home Page" width="1280" height="960">
+          <UnderCard :infos="infos[0]" link="https://gallant-nobel-68373c.netlify.com/"/>
         </div>
-      </div>
-      <ul slot='cardList'>
-        <li><h4>Design</h4></li>
-        <li><h4>Wireframing</h4></li>
-        <li><h4>Prototyping</h4></li>
-        <li><h4>Illustration</h4></li>
-        <li><h4>Branding</h4></li>
-      </ul>
-      <Flickity slot='cardGallery' ref="flickity" :options="flickityOptions" class='gallery'>
-        <figure class="item tablet"><img src='../assets/a1.jpg' alt="Quantyst Home Page" width="1280" height="960"/></figure>
-        <figure class="item tablet"><img src='../assets/a2.jpg' alt="Quantyst Info" width="1280" height="960"/></figure>
-        <figure class="item tablet"><img src='../assets/a3.jpg' alt="Quantyst Contact" width="1280" height="960"/></figure>
+        <div class="item tablet">
+          <img src="../assets/weather-repo.png" alt="Quantyst Info" width="1280" height="960">
+          <UnderCard :infos="infos[1]" link="https://elastic-borg-19684d.netlify.com/"/>
+        </div>
+        <div class="item tablet">
+          <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960">
+          <UnderCard :infos="infos[2]" link="http://mywork.altervista.org/budgety/index.html"/>
+        </div>
       </Flickity>
     </Card>
 
     <Card id="mirage" class="dark card-mg">
-      <h3 slot='cardTitle'>Wave</h3>
-      <div slot='cardContent'>
-        <p><span>2015</span>Wave is an app that you apparently sign in to, go to your profile and upload videos and photos, and then shop for watches and movies. Good thing Wave isn't a real app. These are just app mockups. You should add your own photos here. You know, since this is your portfolio now.</p>
+      <h3 slot="cardTitle">Work experience</h3>
+      <div slot="cardContent">
+        <p>I am a Junior Front End developer with industry experience building websites and web applications. I've got experience in Javascript, Wordpress and SVG animation. I also have experience working with Vue and I'd like to work with React and Vue in the near future.</p>
       </div>
-      <ul slot='cardList'>
-        <li><h4>Product Design</h4></li>
-        <li><h4>Branding</h4></li>
-        <li><h4>Art Direction</h4></li>
-        <li><h4>Prototyping</h4></li>
-        <li><h4>Wireframing</h4></li>
-      </ul>
-      <Flickity slot='cardGallery' ref="flickity" :options="flickityOptions" class='gallery'>
-        <figure class="item phone"><img src='../assets/b1.jpg' alt="App Mockup One" width="750" height="1334"/></figure>
-        <figure class="item phone"><img src='../assets/b2.jpg' alt="App Mockup Two" width="750" height="1334"/></figure>
-        <figure class="item phone"><img src='../assets/b3.jpg' alt="App Mockup Three" width="750" height="1334"/></figure>
+
+      <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
+        <div class="item work phone">
+          <div class="inner">
+            <h2>September 2018-now</h2>
+            <h3>Front end developer</h3>
+            <h4>Pegasus - Inspiring Healthy Decisions</h4>
+            <h5>Technology used:</h5>
+            <ul>
+              <li>Javascript</li>
+              <li>Jquery</li>
+              <li>Wordpress</li>
+              <li>Foundation</li>
+              <li>Bootstrap</li>
+              <li>GSAP</li>
+              <li>SVG</li>
+              <li>SCSS</li>
+            </ul>
+            <h5>Main responsabilities:</h5>
+            <ul>
+              <li>Turn design pages and specific components into Html and CSS</li>
+              <li>Set up functionality using Javascript and Jquery</li>
+              <li>Set up Wordpress environment: ACF, Template and Components</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item work">
+          <div class="inner">
+            <h2>June 2018-September 2018</h2>
+            <h3>Front end developer</h3>
+            <h4>Bought by many</h4>
+            <h5>Technology used:</h5>
+            <ul>
+              <li>Javascript</li>
+              <li>Vue</li>
+              <li>SCSS</li>
+              <li>VUEX</li>
+              <li>GIT</li>
+            </ul>
+            <h5>Main responsabilities:</h5>
+            <ul>
+              <li>Update company styleguide</li>
+              <li>Fix bugs and IE supporting</li>
+              <li>Solve front-end and css issues</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item work">
+          <div class="inner">
+            <h2>
+              May
+              2018
+            </h2>
+            <h3>Internship Front end developer</h3>
+            <h4>Naked idea</h4>
+            <h5>Technology used:</h5>
+            <ul>
+              <li>Javascript</li>
+              <li>Vue</li>
+              <li>SCSS</li>
+              <li>VUEX</li>
+              <li>NUXT</li>
+            </ul>
+            <h5>Main responsabilities:</h5>
+            <ul>
+              <li>Worked with senior front-end to fix bugs and turn css grid into flexbox for IE support</li>
+              <li>Creation of new page in the company website</li>
+            </ul>
+          </div>
+        </div>
       </Flickity>
     </Card>
+    <Timeline/>
 
     <Card id="explain" class="light">
-      <h3 slot='cardTitle'>App Shmap</h3>
-      <div slot='cardContent'>
-        <p><span>2016</span>This is also not really a real thing. Just placeholders, waiting for you to put your own pictures. I don't know what else to say. Are you even still reading this? You put something here instead. This is for you. Aren't you happy about it? Come on, don't be like that.</p>
-      </div>
-      <ul slot='cardList'>
-        <li><h4>Shmap Design</h4></li>
-        <li><h4>App Design</h4></li>
-        <li><h4>Protoshmapping</h4></li>
-        <li><h4>Illustration</h4></li>
-        <li><h4>Wireframing</h4></li>
-      </ul>
-      <Flickity slot='cardGallery' ref="flickity" :options="flickityOptions" class='gallery'>
-        <figure class="item tablet"><img src='../assets/c1.jpg' alt="Drimo Home" width="1280" height="960"/></figure>
-        <figure class="item tablet"><img src='../assets/c2.jpg' alt="Drimo Info" width="1280" height="960"/></figure>
-        <figure class="item tablet"><img src='../assets/c3.jpg' alt="Drimo Video" width="1280" height="960"/></figure>
-      </Flickity>
+      <h3 slot="cardTitle">App Shmap</h3>
     </Card>
-
   </main>
 </template>
 
 <script>
-import Hero from '@/components/Hero.vue'
-import Card from '@/components/Card.vue'
-import Flickity from '@/components/Flickity.vue'
+import Hero from "@/components/Hero.vue";
+import Card from "@/components/Card.vue";
+import Flickity from "@/components/Flickity.vue";
+import UnderCard from "@/components/UnderCard.vue";
+import Timeline from "@/components/Timeline.vue";
 
 export default {
-  mounted () {
-    const navBar = document.getElementById('navigationBar');
+  mounted() {
+    const navBar = document.getElementById("navigationBar");
     navBar.className += " expanded";
   },
-  data () {
+  data() {
     return {
       flickityOptions: {
         freeScroll: true,
@@ -85,31 +127,113 @@ export default {
         wrapAround: false,
         selectedAttraction: 0.032,
         friction: 0.28
-      }
-    }
+      },
+      fullHeight: false,
+      infos: [
+        {
+          general: "Web app made with Vue and New york time API",
+          technology: [
+            "Vuex for state management",
+            "Axios for API call",
+            "Scss",
+            "Vuetify"
+          ]
+        },
+        {
+          general: "Web app made with Vue and Weather API",
+          technology: [
+            "Vuex for state management",
+            "Axios for API call",
+            "Scss",
+            "Bootstrap"
+          ]
+        },
+        {
+          general: "My first javascript application",
+          technology: ["Vanilla javascript", "css", "html5"]
+        }
+      ]
+    };
   },
   components: {
     Hero,
     Card,
-    Flickity
-  },
-}
+    Flickity,
+    UnderCard,
+    Timeline
+  }
+};
 </script>
 
 <style lang="scss" scoped>
+@import "../scss/variables";
 
-@import
-'../scss/variables';
+.inner {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  height: 690px;
+  h2 {
+    text-align: left;
+    color: $yellow;
+    font-size: 14px;
+  }
+
+  h4 {
+    margin-bottom: 50px;
+  }
+
+  h5 {
+    margin-bottom: 20px;
+    color: $yellow;
+  }
+  ul {
+    margin-bottom: 40px;
+    max-width: 30vw;
+  }
+
+  li {
+    color: #98b3b3;
+    text-align: left;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    &:after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      background: #98b3b3;
+      border-radius: 50%;
+      left: 0;
+    }
+  }
+
+  h5 {
+    text-align: left;
+  }
+}
 
 .content p span {
   color: $yellow;
   margin-right: 1rem;
 }
 
+.content p {
+  width: 100vw;
+}
+
+.content h3 {
+  margin-right: 20px;
+}
+
 .buttons {
-	margin-top: 2rem;
-	display: flex;
-	justify-content: flex-start;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .card-mg {
@@ -117,35 +241,47 @@ export default {
 }
 
 ul {
-	max-width: 20vw;
-	font-size: 0;
+  max-width: 20vw;
+  font-size: 0;
 }
 
 #quantyst .gallery::before {
   background-color: hsl(315, 90%, 90%);
-  background-image: linear-gradient(340deg, hsl(315, 90%, 90%) 0%, hsl(280, 20%, 90%) 100%);
+  background-image: linear-gradient(
+    340deg,
+    hsl(315, 90%, 90%) 0%,
+    hsl(280, 20%, 90%) 100%
+  );
 }
 
 #quantyst .item {
-	box-shadow: 0 15px 60px hsla(320,50%,40%, 0.35);
+  box-shadow: 0 15px 60px hsla(320, 50%, 40%, 0.35);
 }
 
 #mirage .gallery::before {
-  background-color: hsl(190,55%,80%);
-  background-image: linear-gradient(340deg, hsl(200,75%,70%) 0%, hsl(180,55%,80%) 100%);
+  background-color: hsl(190, 55%, 80%);
+  background-image: linear-gradient(
+    340deg,
+    hsl(200, 75%, 70%) 0%,
+    hsl(180, 55%, 80%) 100%
+  );
 }
 
 #mirage .item {
-  box-shadow: 0 15px 60px hsla(190,70%,0%, 0.4);
+  box-shadow: 0 15px 60px hsla(190, 70%, 0%, 0.4);
 }
 
 #explain .gallery::before {
   background-color: hsl(220, 40%, 70%);
-  background-image: linear-gradient(5deg, hsl(220, 40%, 70%) 0%, hsl(145, 25%, 90%) 100%);
+  background-image: linear-gradient(
+    5deg,
+    hsl(220, 40%, 70%) 0%,
+    hsl(145, 25%, 90%) 100%
+  );
 }
 
 #explain .item {
-  box-shadow: 0 15px 60px hsla(220,60%,30%, 0.35);
+  box-shadow: 0 15px 60px hsla(220, 60%, 30%, 0.35);
 }
 
 #explain .content h3 {
@@ -155,33 +291,32 @@ ul {
 }
 
 @media (min-width: 1600px) {
-	#explain .content h3 {
-		margin-left: 10%;
-		width: 15%;
-	}
+  #explain .content h3 {
+    margin-left: 10%;
+    width: 15%;
+  }
 }
 
 @media (max-width: 960px) {
   #explain .content h3 {
-		margin-left: 0;
+    margin-left: 0;
     width: 100%;
   }
 
   ul {
-		margin: 1.5rem 0 1rem 0;
-		max-width: 100%;
+    margin: 1.5rem 0 1rem 0;
+    max-width: 100%;
   }
 
-	ul li {
-		display: inline-block;
-		margin-right: 2.5vw;
-	}
+  ul li {
+    display: inline-block;
+    margin-right: 2.5vw;
+  }
 }
 
 @media (max-width: 560px) {
-	.buttons {
-		flex-direction: column;
-	}
+  .buttons {
+    flex-direction: column;
+  }
 }
-
 </style>

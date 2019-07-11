@@ -1,19 +1,18 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import AOS from "aos";
-import 'aos/dist/aos.css'
-import { VueTyper } from 'vue-typer'
- 
- 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { VueTyper } from 'vue-typer';
+import VueParticles from 'vue-particles';
 
-
+Vue.use(VueParticles);
 
 Vue.config.productionTip = false;
 
 new Vue({
   created() {
-    AOS.init()
+    AOS.init();
   },
   router,
   render: h => h(App),
