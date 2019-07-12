@@ -263,7 +263,7 @@ h3 {
   height: 100vh;
   position: absolute;
   right: 0;
-  background: black;
+  background: #6774e4;
   transition: all 1s;
   display: flex;
   flex-direction: column;
