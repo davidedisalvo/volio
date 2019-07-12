@@ -279,7 +279,7 @@ h3 {
   width: 50px;
   transition: all 0.5s;
   position: relative;
-  background: #1a1a1a;
+  background: #144467;
 }
 
 .layer .vue-typer .left .char.custom.char {
