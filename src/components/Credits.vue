@@ -30,11 +30,7 @@
             <span class="highlighter">LinkedIn</span>
           </a>
           <br>
-          <a
-            href="https://www.linkedin.com/in/davide-di-salvo-75aa16a2/"
-            title="LinkedIn"
-            target="_blank"
-          >
+          <a :href="`${publicPath}CV-davide-disalvo.pdf`" download target="_blank">
             <span class="highlighter">Download my CV</span>
           </a>
         </p>
@@ -42,6 +38,16 @@
     </div>
   </footer>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
+    };
+  }
+};
+</script>
+
 
 <style lang="scss" scoped>
 @import "../scss/variables";

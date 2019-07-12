@@ -210,7 +210,7 @@ header {
 
 .hero {
   background-color: #5100ff;
-  background-image: url("../assets/ferdinand-stohr-NFs6dRTBgaM-unsplash.jpg");
+  background-image: url("../assets/background-hero.jpg");
   background-attachment: fixed;
   background-size: cover;
   -webkit-clip-path: polygon(
