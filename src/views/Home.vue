@@ -21,7 +21,7 @@
       </Flickity>
     </Card>
 
-    <Card id="mirage" class="dark card-mg">
+    <Card id="mirage" class="dark card-mg desktop-visible">
       <h3 slot="cardTitle">Work experience</h3>
       <div slot="cardContent">
         <p>I am a Junior Front End developer with industry experience building websites and web applications. I've got experience in Javascript, Wordpress and SVG animation. I also have experience working with Vue and I'd like to work with React and Vue in the near future.</p>
@@ -97,6 +97,81 @@
           </div>
         </div>
       </Flickity>
+    </Card>
+
+    <Card id="mirage" class="dark card-mg mobile-visible">
+      <h3 slot="cardTitle">Work experience</h3>
+      <div slot="cardContent">
+        <p>I am a Junior Front End developer with industry experience building websites and web applications. I've got experience in Javascript, Wordpress and SVG animation. I also have experience working with Vue and I'd like to work with React and Vue in the near future.</p>
+        <div class="item work phone">
+          <div class="inner">
+            <h2>September 2018-now</h2>
+            <h3>Front end developer</h3>
+            <h4>Pegasus - Inspiring Healthy Decisions</h4>
+            <h5>Technology used:</h5>
+            <ul>
+              <li>Javascript</li>
+              <li>Jquery</li>
+              <li>Wordpress</li>
+              <li>Foundation</li>
+              <li>Bootstrap</li>
+              <li>GSAP</li>
+              <li>SVG</li>
+              <li>SCSS</li>
+            </ul>
+            <h5>Main responsabilities:</h5>
+            <ul>
+              <li>Turn design pages and specific components into Html and CSS</li>
+              <li>Set up functionality using Javascript and Jquery</li>
+              <li>Set up Wordpress environment: ACF, Template and Components</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item work phone">
+          <div class="inner">
+            <h2>June 2018-September 2018</h2>
+            <h3>Front end developer</h3>
+            <h4>Bought by many</h4>
+            <h5>Technology used:</h5>
+            <ul>
+              <li>Javascript</li>
+              <li>Vue</li>
+              <li>SCSS</li>
+              <li>VUEX</li>
+              <li>GIT</li>
+            </ul>
+            <h5>Main responsabilities:</h5>
+            <ul>
+              <li>Update company styleguide</li>
+              <li>Fix bugs and IE supporting</li>
+              <li>Solve front-end and css issues</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item work phone">
+          <div class="inner">
+            <h2>
+              May
+              2018
+            </h2>
+            <h3>Internship Front end developer</h3>
+            <h4>Naked idea</h4>
+            <h5>Technology used:</h5>
+            <ul>
+              <li>Javascript</li>
+              <li>Vue</li>
+              <li>SCSS</li>
+              <li>VUEX</li>
+              <li>NUXT</li>
+            </ul>
+            <h5>Main responsabilities:</h5>
+            <ul>
+              <li>Worked with senior front-end to fix bugs and turn css grid into flexbox for IE support</li>
+              <li>Creation of new page in the company website</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </Card>
 
     <Card id="explain" class="light">
@@ -232,15 +307,15 @@ export default {
   .under-card {
     transform: translateY(0) !important;
     transition: transform 1s ease-in-out;
+
+    @media (max-width: 560px) {
+      height: 100%;
+    }
   }
 }
 .content p span {
   color: $yellow;
   margin-right: 1rem;
-}
-
-.content p {
-  width: 100vw;
 }
 
 .content h3 {
@@ -331,9 +406,36 @@ ul {
   }
 }
 
+.mobile-visible {
+  display: none;
+}
+
 @media (max-width: 560px) {
   .buttons {
     flex-direction: column;
+  }
+
+  .mobile-visible {
+    display: block;
+
+    .item {
+      width: 100%;
+      height: 600px;
+    }
+
+    .inner {
+      width: 100%;
+
+      ul {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .desktop-visible {
+    display: none;
   }
 }
 </style>

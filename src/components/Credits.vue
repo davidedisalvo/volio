@@ -29,6 +29,14 @@
           >
             <span class="highlighter">LinkedIn</span>
           </a>
+          <br>
+          <a
+            href="https://www.linkedin.com/in/davide-di-salvo-75aa16a2/"
+            title="LinkedIn"
+            target="_blank"
+          >
+            <span class="highlighter">Download my CV</span>
+          </a>
         </p>
       </div>
     </div>

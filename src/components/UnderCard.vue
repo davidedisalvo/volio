@@ -51,10 +51,10 @@ export default {
   position: absolute;
   background: #1a1a1a;
   width: 100%;
-  height: 230px;
+  height: 250px;
   bottom: 0;
   padding-left: 30px;
-  transform: translateY(200px);
+  transform: translateY(220px);
   text-align: left;
   opacity: 0.9;
   transition: transform 1s ease-in-out;
@@ -82,11 +82,11 @@ export default {
     }
 
     &:after {
-      width: 8px;
-      height: 8px;
+      width: 6px;
+      height: 6px;
       position: absolute;
       background: white;
-      border-radius: 50%;
+      border-radius: 20%;
       left: 0;
     }
 

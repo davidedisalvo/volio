@@ -152,6 +152,10 @@ header {
   right: 60px;
   transform: rotate(180deg) translateY(-50%);
   top: 37%;
+
+  @media (max-width: 560px) {
+    display: none;
+  }
 }
 .arrow-second {
   position: absolute;
@@ -238,6 +242,14 @@ header {
   .title-container {
     margin-top: calc(50% - 84px);
     transform: translateY(-50%);
+
+    @media (max-width: 560px) {
+      margin-top: calc(50% + 84px);
+
+      h1 {
+        font-size: 40px;
+      }
+    }
   }
 }
 
@@ -257,6 +269,10 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 100px;
+
+  @media (max-width: 560px) {
+    display: none;
+  }
 }
 
 .layerClass {

@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import { VueTyper } from 'vue-typer';
 import VueParticles from 'vue-particles';
 
-AOS.init();
+AOS.init({ once: true });
 
 Vue.use(VueParticles);
 

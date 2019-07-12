@@ -77,6 +77,9 @@
 
 .content p {
   margin-left: 10%;
+  @media only screen and (max-width: 470px) {
+    margin-left: 0px;
+  }
 }
 
 .timeline {
