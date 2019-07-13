@@ -5,7 +5,10 @@
     <Card id="quantyst" class="light card-mg">
       <h3 slot="cardTitle">Portfolio</h3>
       <div slot="cardContent">
-        <p>Here's how I like to spend my free time. Some application that I've recently build to improve my Vue skills</p>
+        <p>
+          Here's how I like to spend my free time.
+          <br>Some application that I've recently built to improve my Vue skills:
+        </p>
       </div>
       <div slot="cardContent"></div>
       <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
