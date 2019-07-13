@@ -341,8 +341,10 @@ export default {
   }
 }
 .item:hover {
-  h2 {
-    opacity: 0;
+  @media (max-width: 560px) {
+    h2 {
+      opacity: 0;
+    }
   }
   img {
     filter: grayscale(1.4);
