@@ -24,7 +24,7 @@
         clickMode="push"
         v-if="isTyping"
         class="particles"
-        :lineOpacity="0"
+        :lineOpacity=".2"
       ></vue-particles>
       <vue-typer
         v-if="isTyping"

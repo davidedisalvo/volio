@@ -4,18 +4,31 @@
 
     <Card id="quantyst" class="light card-mg">
       <h3 slot="cardTitle">Portfolio</h3>
+      <div slot="cardContent">
+        <p>Here's how I like to spend my free time. Some application that I've recently build to improve my Vue skills</p>
+      </div>
       <div slot="cardContent"></div>
       <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
-        <div class="item tablet">
-          <img src="../assets/nyt-repo.png" alt="Quantyst Home Page" width="1280" height="960">
+        <div class="item portfolio tablet">
+          <div class="inner-box">
+            <h2>Vue application with New York Time Api</h2>
+            <img src="../assets/nyt-repo.png" alt="Quantyst Home Page" width="1280" height="960">
+          </div>
           <UnderCard :infos="infos[0]" link="https://gallant-nobel-68373c.netlify.com/"/>
         </div>
-        <div class="item tablet">
-          <img src="../assets/weather-repo.png" alt="Quantyst Info" width="1280" height="960">
+        <div class="item portfolio tablet">
+          <div class="inner-box">
+            <h2>Vue application with Weather Api</h2>
+            <img src="../assets/weather-repo.png" alt="Quantyst Info" width="1280" height="960">
+          </div>
           <UnderCard :infos="infos[1]" link="https://elastic-borg-19684d.netlify.com/"/>
         </div>
-        <div class="item tablet">
-          <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960">
+        <div class="item portfolio tablet">
+          <div class="inner-box">
+            <h2>Vanilla Javascript application</h2>
+            <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960">
+          </div>
+
           <UnderCard :infos="infos[2]" link="http://mywork.altervista.org/budgety/index.html"/>
         </div>
       </Flickity>
@@ -293,12 +306,44 @@ export default {
     text-align: left;
   }
 }
-.item {
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a1a;
+
+  .inner-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    @media only screen and (max-width: 560px) {
+      font-size: 20px;
+    }
+  }
   img {
+    width: 50%;
+    transition: all 0.4s;
+  }
+}
+.item {
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 50%;
     transition: all 0.4s;
   }
 }
 .item:hover {
+  h2 {
+    opacity: 0;
+  }
   img {
     filter: grayscale(1.4);
     transform: scale(1.2);
