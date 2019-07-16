@@ -157,9 +157,11 @@ header {
   box-shadow: 9px 7px 5px -2px rgba(0, 0, 0, 0.75);
   color: #1a1a1a;
   overflow: hidden;
+  transition: all 0.6s;
 
   &:hover {
     background: #dbe0f3;
+    transition: all 0.6s;
   }
 }
 
