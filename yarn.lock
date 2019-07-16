@@ -3724,13 +3724,6 @@ flickity@^2.0.5:
     unidragger "^2.3.0"
     unipointer "^2.3.0"
 
-flipbook-vue@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/flipbook-vue/-/flipbook-vue-0.3.3.tgz#9f0b4f1e337109271717a88e1b79c014bbf63083"
-  integrity sha512-7AXiETszIQnvP4D6FcksQqToNMmgTQZlO0jjIab+u1nWuQNMwW+8ehZh8x3z7T7aC9ausbZo+XjO4Yw7VMt9UA==
-  dependencies:
-    rematrix "^0.3.0"
-
 flush-write-stream@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/flush-write-stream/-/flush-write-stream-1.1.1.tgz#8dd7d873a1babc207d94ead0c2e0e44276ebf2e8"
