@@ -324,6 +324,8 @@ export default {
   h2 {
     text-align: center;
     margin-bottom: 50px;
+    font-family: Replica-Mono, "Helvetica Neue", Helvetica, sans-serif;
+
     padding: 0 20px;
     @media only screen and (max-width: 560px) {
       font-size: 20px;
