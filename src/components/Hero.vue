@@ -6,12 +6,8 @@
           HI!
           <br>I'M DAVIDE DI SALVO
         </h1>
+        <div class="know-button" @click="deleteLayer()">KNOW MORE</div>
       </div>
-    </div>
-    <div class="arrow" @click="deleteLayer()">
-      <a href="#" class="arrowBtn1">
-        <span class="arrowBtn2"></span>
-      </a>
     </div>
 
     <div class="layer" :class="{ layerClass: layerClass }">
@@ -24,7 +20,7 @@
         clickMode="push"
         v-if="isTyping"
         class="particles"
-        :lineOpacity=".2"
+        :lineOpacity="0"
       ></vue-particles>
       <vue-typer
         v-if="isTyping"
@@ -139,6 +135,31 @@ header {
     margin-top: 10px;
     font-size: 31px;
     font-weight: bold;
+  }
+}
+
+.know-button {
+  width: 130px;
+  position: relative;
+  height: 50px;
+  background: #f3f5fc;
+  display: flex;
+  font-weight: bold;
+  box-shadow: black;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  cursor: pointer;
+  font: 1rem/1 "Replica-Mono", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-box-shadow: 9px 7px 5px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 7px 5px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 7px 5px -2px rgba(0, 0, 0, 0.75);
+  color: #1a1a1a;
+  overflow: hidden;
+
+  &:hover {
+    background: #dbe0f3;
   }
 }
 
@@ -276,7 +297,7 @@ h3 {
 }
 
 .layerClass {
-  width: 50px;
+  width: 0px;
   transition: all 0.5s;
   position: relative;
   background: #144467;
