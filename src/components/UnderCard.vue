@@ -9,7 +9,7 @@
     <h5>{{infos.general}}</h5>
     <ul>
       <li>
-        <span>Technology:</span>
+        <span>TECHNOLOGY</span>
       </li>
       <li v-for="item in infos.technology">{{item}}</li>
     </ul>
@@ -76,14 +76,15 @@ export default {
     display: flex;
     align-items: center;
     margin-left: 15px;
+    font-family: Replica-Mono, "Helvetica Neue", Helvetica, sans-serif;
 
     span {
       color: #ffbc05;
     }
 
     &:after {
-      width: 6px;
-      height: 6px;
+      width: 5px;
+      height: 5px;
       position: absolute;
       background: white;
       border-radius: 20%;
@@ -109,6 +110,7 @@ export default {
   }
   h5 {
     margin-bottom: 30px;
+    font-family: Replica-Mono, "Helvetica Neue", Helvetica, sans-serif;
   }
 
   .center {

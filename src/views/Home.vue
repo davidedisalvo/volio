@@ -379,7 +379,7 @@ export default {
 }
 
 .card-mg {
-  margin: 0 0 15vw 0;
+  margin: -100px 0 15vw 0;
 }
 
 ul {

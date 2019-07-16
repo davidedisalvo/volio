@@ -73,6 +73,7 @@
   width: 75%;
   margin-left: 15px;
   text-align: left;
+  font-family: Replica-Mono, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .content p {
@@ -118,6 +119,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: Replica-Mono, "Helvetica Neue", Helvetica, sans-serif;
   }
   .timeline-date {
     padding-right: 3rem; //change
@@ -128,6 +130,7 @@
       background: white;
       padding: 0.2rem 0.4rem;
       margin: -4px 0 1rem 0;
+      font-family: Replica-Mono, "Helvetica Neue", Helvetica, sans-serif;
     }
   }
   .timeline-info {
@@ -136,6 +139,7 @@
 
     h3 {
       color: #1a1a1a;
+      font-family: Replica-Mono, "Helvetica Neue", Helvetica, sans-serif;
     }
   }
   @include bp(medium) {
