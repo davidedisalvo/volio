@@ -158,6 +158,7 @@ header {
   color: #1a1a1a;
   overflow: hidden;
   transition: all 0.6s;
+  font-weight: bold;
 
   &:hover {
     background: #dbe0f3;
