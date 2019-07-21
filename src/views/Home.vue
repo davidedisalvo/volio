@@ -28,6 +28,13 @@
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
+            <h2>Vue application with Nasa Api and combo filter</h2>
+            <img src="../assets/nasa-repo.png" alt="Quantyst Info" width="1280" height="960">
+          </div>
+          <UnderCard :infos="infos[1]" link="https://kind-euler-997b22.netlify.com/"/>
+        </div>
+        <div class="item portfolio tablet">
+          <div class="inner-box">
             <h2>Vanilla Javascript application</h2>
             <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960">
           </div>
@@ -242,6 +249,15 @@ export default {
           ]
         },
         {
+          general: "Web app made with Vue and Nasa API",
+          technology: [
+            "Vuex for state management",
+            "Axios for API call",
+            "Scss",
+            "Vuetify"
+          ]
+        },
+        {
           general: "My first javascript application",
           technology: ["Vanilla javascript", "css", "html5"]
         }
@@ -324,7 +340,7 @@ export default {
   h2 {
     text-align: center;
     margin-bottom: 50px;
-    font-family: Replica-Mono, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: FuturaHeavy, "Helvetica Neue", Helvetica, sans-serif;
 
     padding: 0 20px;
     @media only screen and (max-width: 560px) {
