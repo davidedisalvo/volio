@@ -31,7 +31,7 @@
             <h2>Vue application with Nasa Api and combo filter</h2>
             <img src="../assets/nasa-repo.png" alt="Quantyst Info" width="1280" height="960">
           </div>
-          <UnderCard :infos="infos[1]" link="https://kind-euler-997b22.netlify.com/"/>
+          <UnderCard :infos="infos[2]" link="https://kind-euler-997b22.netlify.com/"/>
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
@@ -39,7 +39,7 @@
             <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960">
           </div>
 
-          <UnderCard :infos="infos[2]" link="http://mywork.altervista.org/budgety/index.html"/>
+          <UnderCard :infos="infos[3]" link="http://mywork.altervista.org/budgety/index.html"/>
         </div>
       </Flickity>
     </Card>
