@@ -14,24 +14,36 @@
       <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
         <div class="item portfolio tablet">
           <div class="inner-box">
+            <h2>Front end for ecommerce</h2>
+            <img
+              src="../assets/ecommerce-repo.png"
+              alt="Quantyst Home Page"
+              width="1280"
+              height="960"
+            >
+          </div>
+          <UnderCard :infos="infos[0]" link="https://ecommerce-example.netlify.com/"/>
+        </div>
+        <div class="item portfolio tablet">
+          <div class="inner-box">
             <h2>Vue application with New York Time Api</h2>
             <img src="../assets/nyt-repo.png" alt="Quantyst Home Page" width="1280" height="960">
           </div>
-          <UnderCard :infos="infos[0]" link="https://gallant-nobel-68373c.netlify.com/"/>
+          <UnderCard :infos="infos[1]" link="https://gallant-nobel-68373c.netlify.com/"/>
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vue application with Weather Api</h2>
             <img src="../assets/weather-repo.png" alt="Quantyst Info" width="1280" height="960">
           </div>
-          <UnderCard :infos="infos[1]" link="https://elastic-borg-19684d.netlify.com/"/>
+          <UnderCard :infos="infos[2]" link="https://elastic-borg-19684d.netlify.com/"/>
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vue application with Nasa Api and combo filter</h2>
             <img src="../assets/nasa-repo.png" alt="Quantyst Info" width="1280" height="960">
           </div>
-          <UnderCard :infos="infos[2]" link="https://kind-euler-997b22.netlify.com/"/>
+          <UnderCard :infos="infos[3]" link="https://kind-euler-997b22.netlify.com/"/>
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
@@ -39,7 +51,7 @@
             <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960">
           </div>
 
-          <UnderCard :infos="infos[3]" link="http://mywork.altervista.org/budgety/index.html"/>
+          <UnderCard :infos="infos[4]" link="http://mywork.altervista.org/budgety/index.html"/>
         </div>
       </Flickity>
     </Card>
@@ -230,6 +242,15 @@ export default {
       },
       fullHeight: false,
       infos: [
+        {
+          general: "Ecommerce with cart and form implemented",
+          technology: [
+            "Vuex for state management",
+            "Css animation",
+            "Scss",
+            "Vuetify"
+          ]
+        },
         {
           general: "Web app made with Vue and New york time API",
           technology: [
