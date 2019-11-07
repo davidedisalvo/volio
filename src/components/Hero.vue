@@ -149,7 +149,7 @@ header {
   border-radius: 3px;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 70px;
   cursor: pointer;
   font: 1rem/1 "Replica-Mono", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-box-shadow: 9px 7px 5px -2px rgba(0, 0, 0, 0.75);
@@ -164,6 +164,12 @@ header {
     background: #dbe0f3;
     transition: all 0.6s;
   }
+  @media only screen and (max-width: 560px) {
+    display: none;
+  }
+}
+.header-text .title-container h1 {
+  margin-bottom: 20px;
 }
 
 .title-main {
@@ -261,7 +267,7 @@ header {
   margin: 0;
   h1 {
     font-size: 5em;
-    padding-left: 20px;
+    padding-left: 70px;
   }
   .title-container {
     margin-top: calc(50% - 84px);
