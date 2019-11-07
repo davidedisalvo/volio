@@ -78,4 +78,9 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+.timeline-info {
+  h3 {
+    font-size: 35px !important;
+  }
+}
 </style>
