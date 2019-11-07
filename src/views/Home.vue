@@ -515,11 +515,6 @@ ul {
 .mobile-visible {
   display: none;
 }
-.timeline-info {
-  h3 {
-    font-size: 35px !important;
-  }
-}
 
 @media (max-width: 560px) {
   .buttons {
