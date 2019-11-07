@@ -268,6 +268,9 @@ header {
   h1 {
     font-size: 5em;
     padding-left: 70px;
+    @media (max-width: 560px) {
+      padding-left: 20px;
+    }
   }
   .title-container {
     margin-top: calc(50% - 84px);
