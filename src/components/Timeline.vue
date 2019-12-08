@@ -86,7 +86,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-left: 2.5rem; //change
+  padding-left: 1.5rem; //change
   &:before {
     display: inline-block;
     position: absolute;

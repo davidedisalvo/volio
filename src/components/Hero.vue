@@ -324,4 +324,10 @@ h3 {
     transform: scale(0.7);
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .timeline{
+    padding-left: 1.5rem;
+  }
+}
 </style>
