@@ -79,7 +79,31 @@
       <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
         <div class="item work phone">
           <div class="inner">
-            <h2>September 2018-now</h2>
+            <h2>December 2019 - now</h2>
+            <h3>Front end developer</h3>
+            <h4>AKA UK</h4>
+            <h5>Technology used:</h5>
+            <ul>
+              <li>Javascript</li>
+              <li>Jquery</li>
+              <li>Wordpress</li>
+              <li>Wordpress API</li>
+              <li>VUE</li>
+              <li>VUEX</li>
+              <li>Docker</li>
+              <li>SCSS</li>
+            </ul>
+            <h5>Main responsabilities:</h5>
+            <ul>
+              <li>Set up Wordpress environment with twig template and ACF </li>
+              <li>Front end built (WORDPRESS API - VUE) <a target="_blank" href="https://atg.co.uk/"> https://atg.co.uk/</a></li>
+              <li>Set up specific functionality with javascript, jquery and Vue</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item work phone">
+          <div class="inner">
+            <h2>September 2018 - November 2019</h2>
             <h3>Front end developer</h3>
             <h4>Pegasus - Inspiring Healthy Decisions</h4>
             <h5>Technology used:</h5>
