@@ -10,8 +10,8 @@
       </div>
     </div>
 
-    <div class="layer" :class="{ layerClass: layerClass }">
-      <vue-particles
+    <div id="test" class="layer" :class="{ layerClass: layerClass }">
+      <!-- <vue-particles
         color="#dedede"
         :particlesNumber="100"
         :particleSize="6"
@@ -21,7 +21,7 @@
         v-if="isTyping"
         class="particles"
         :lineOpacity="0"
-      ></vue-particles>
+      ></vue-particles> -->
       <vue-typer
         v-if="isTyping"
         class="title-main"
@@ -42,6 +42,7 @@
 </template>
 <script>
 import { VueTyper } from "vue-typer";
+import NET from 'vanta/dist/vanta.globe.min'
 
 export default {
   components: {
@@ -74,6 +75,19 @@ export default {
       this.scrolled = window.scrollY > 0;
     }
   },
+mounted() {
+  this.vantaEffect = NET({
+    el: "#test",
+  mouseControls: true,
+  touchControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+    // ...
+  });
+
+},
   created() {
     window.addEventListener("scroll", this.handleScroll);
   },
@@ -94,7 +108,8 @@ header {
 
 .list {
   font-size: 25px;
-  text-align: center;
+    padding-left: 20px;
+  text-align: left;
 }
 
 .particles {
@@ -175,7 +190,8 @@ header {
 .title-main {
   font-size: 55px;
   font-family: FuturaHeavy, "Helvetica Neue", Helvetica, sans-serif;
-  text-align: center;
+  padding-left: 20px;
+  text-align: left;
 }
 .arrow {
   position: absolute;
@@ -273,7 +289,7 @@ header {
     }
   }
   .title-container {
-    margin-top: calc(50% - 84px);
+    margin-top: calc(50% - 127px);
     transform: translateY(-50%);
 
     @media (max-width: 560px) {
@@ -292,16 +308,17 @@ h3 {
 }
 
 .layer {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  position: absolute;
-  right: 0;
-  background: #6774e4;
+  transform: translateX(0);
   transition: all 1s;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 100px;
+  position: absolute !important;
+  left: 0;
+  top: 0;
 
   @media (max-width: 560px) {
     display: none;
@@ -309,10 +326,13 @@ h3 {
 }
 
 .layerClass {
-  width: 0px;
+  transform: translateX(100vw);
   transition: all 0.5s;
   position: relative;
-  background: #144467;
+  // background: #144467;
+}
+.vue-typer {
+  z-index: 999;
 }
 
 .layer .vue-typer .left .char.custom.char {

@@ -5,6 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { VueTyper } from 'vue-typer';
 import VueParticles from 'vue-particles';
+import Vanta from 'vanta/dist/vanta.net.min';
+import * as THREE from 'three';
 
 AOS.init({ once: true });
 
