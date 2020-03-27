@@ -21,10 +21,10 @@
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
-            <h2>Find beer on map</h2>
-            <img src="../assets/beer-on-map.png" alt="Quantyst Home Page" width="1280" height="960">
+            <h2>Covid-19 tracker</h2>
+            <img src="../assets/covid-repo.png" alt="Quantyst Home Page" width="1280" height="960">
           </div>
-          <UnderCard :infos="infos[1]" link="https://beer-on-map.netlify.com/"/>
+          <UnderCard :infos="infos[1]" link="https://tracker-covid19.netlify.com/"/>
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
@@ -291,13 +291,13 @@ export default {
           ]
         },
         {
-          general: "Beer locator on map",
+          general: "Covid-19 tracker",
           technology: [
             "Vuex for state management",
-            "Bodymovin",
-            "GSAP",
             "Vue2-leaflet",
-            "Axios for API call"
+            "Axios for API call",
+            "Scss",
+            "Vue-Bootstrap"
           ]
         },
         {
