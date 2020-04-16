@@ -1,30 +1,35 @@
 <template>
   <main id="home">
-    <Hero/>
+    <Hero />
 
     <Card id="quantyst" class="light card-mg">
       <h3 slot="cardTitle">Portfolio</h3>
       <div slot="cardContent">
         <p>
           Here's how I like to spend my free time.
-          <br>Some application that I've recently built to improve my Vue skills:
+          <br />Some application that I've recently built to improve my Vue skills:
         </p>
       </div>
       <div slot="cardContent"></div>
       <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
-         <div class="item portfolio tablet">
+        <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Sailboat store website</h2>
-            <img src="../assets/sailboat-repo.png" alt="Quantyst Home Page" width="1280" height="960">
+            <img
+              src="../assets/sailboat-repo.png"
+              alt="Quantyst Home Page"
+              width="1280"
+              height="960"
+            />
           </div>
-          <UnderCard :infos="infos[0]" link="https://boat-on-sale.netlify.com/"/>
+          <UnderCard :infos="infos[0]" link="https://boat-on-sale.netlify.com/" />
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Covid-19 tracker</h2>
-            <img src="../assets/covid-repo.png" alt="Quantyst Home Page" width="1280" height="960">
+            <img src="../assets/covid-repo.png" alt="Quantyst Home Page" width="1280" height="960" />
           </div>
-          <UnderCard :infos="infos[1]" link="https://tracker-covid19.netlify.com/"/>
+          <UnderCard :infos="infos[1]" link="https://tracker-covid19.netlify.com/" />
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
@@ -34,38 +39,50 @@
               alt="Quantyst Home Page"
               width="1280"
               height="960"
-            >
+            />
           </div>
-          <UnderCard :infos="infos[2]" link="https://ecommerce-example.netlify.com/"/>
+          <UnderCard :infos="infos[2]" link="https://ecommerce-example.netlify.com/" />
+        </div>
+        <div class="item portfolio tablet">
+          <div class="inner-box">
+            <h2>English dictionary with react</h2>
+            <img
+              src="../assets/dictionary-repo.png"
+              alt="Quantyst Home Page"
+              width="1280"
+              height="960"
+            />
+          </div>
+          <UnderCard :infos="infos[3]" link="https://dictionary-react.netlify.app" />
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vue application with New York Time Api</h2>
-            <img src="../assets/nyt-repo.png" alt="Quantyst Home Page" width="1280" height="960">
+            <img src="../assets/nyt-repo.png" alt="Quantyst Home Page" width="1280" height="960" />
           </div>
-          <UnderCard :infos="infos[3]" link="https://gallant-nobel-68373c.netlify.com/"/>
+          <UnderCard :infos="infos[4]" link="https://gallant-nobel-68373c.netlify.com/" />
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vue application with Weather Api</h2>
-            <img src="../assets/weather-repo.png" alt="Quantyst Info" width="1280" height="960">
+            <img src="../assets/weather-repo.png" alt="Quantyst Info" width="1280" height="960" />
           </div>
-          <UnderCard :infos="infos[4]" link="https://elastic-borg-19684d.netlify.com/"/>
+          <UnderCard :infos="infos[5]" link="https://elastic-borg-19684d.netlify.com/" />
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vue application with Nasa Api and combo filter</h2>
-            <img src="../assets/nasa-repo.png" alt="Quantyst Info" width="1280" height="960">
+            <img src="../assets/nasa-repo.png" alt="Quantyst Info" width="1280" height="960" />
           </div>
-          <UnderCard :infos="infos[5]" link="https://kind-euler-997b22.netlify.com/"/>
+          <UnderCard :infos="infos[6]" link="https://kind-euler-997b22.netlify.com/" />
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vanilla Javascript application</h2>
-            <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960">
+            <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960" />
           </div>
 
-          <UnderCard :infos="infos[6]" link="http://mywork.altervista.org/budgety/index.html"/>
+          <UnderCard :infos="infos[7]" link="http://mywork.altervista.org/budgety/index.html" />
         </div>
       </Flickity>
     </Card>
@@ -95,8 +112,14 @@
             </ul>
             <h5>Main responsabilities:</h5>
             <ul>
-              <li>Set up Wordpress environment with twig template and ACF </li>
-              <li>Front end built (WORDPRESS API - VUE) <a target="_blank" href="https://atg.co.uk/"> https://atg.co.uk/</a></li>
+              <li>Set up Wordpress environment with twig template and ACF</li>
+              <li>
+                Front end built (WORDPRESS API - VUE)
+                <a
+                  target="_blank"
+                  href="https://atg.co.uk/"
+                >https://atg.co.uk/</a>
+              </li>
               <li>Set up specific functionality with javascript, jquery and Vue</li>
             </ul>
           </div>
@@ -249,7 +272,7 @@
 
     <Card id="explain" class="light">
       <div slot="cardContent">
-        <Timeline/>
+        <Timeline />
       </div>
       <h3 slot="cardTitle">Education</h3>
     </Card>
@@ -287,7 +310,7 @@ export default {
             "Vuex for state management",
             "Wordpress API for backend",
             "Vuetify",
-            "Scrolzzz",
+            "Scrolzzz"
           ]
         },
         {
@@ -307,6 +330,15 @@ export default {
             "Css animation",
             "Scss",
             "Vuetify"
+          ]
+        },
+        {
+          general: "My first React application",
+          technology: [
+            "React hooks",
+            "Axios for API call",
+            "Scss",
+            "CSS modules"
           ]
         },
         {
@@ -585,5 +617,4 @@ ul {
     display: none;
   }
 }
-
 </style>

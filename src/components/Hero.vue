@@ -50,6 +50,7 @@ export default {
     VueTyper
   },
 
+
   data() {
     return {
       layerClass: true,
