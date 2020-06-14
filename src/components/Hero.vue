@@ -4,7 +4,7 @@
       <div class="title-container">
         <h1 data-aos="fade-up-left">
           HI!
-          <br>I'M DAVIDE DI SALVO
+          <br />I'M DAVIDE DI SALVO
         </h1>
         <div class="know-button" @click="deleteLayer()">KNOW MORE</div>
       </div>
@@ -21,7 +21,7 @@
         v-if="isTyping"
         class="particles"
         :lineOpacity="0"
-      ></vue-particles> -->
+      ></vue-particles>-->
       <vue-typer
         v-if="isTyping"
         class="title-main"
@@ -42,7 +42,7 @@
 </template>
 <script>
 import { VueTyper } from "vue-typer";
-import NET from 'vanta/dist/vanta.globe.min'
+import NET from "vanta/dist/vanta.globe.min";
 
 export default {
   components: {
@@ -50,14 +50,13 @@ export default {
     VueTyper
   },
 
-
   data() {
     return {
       layerClass: true,
       isTyping: false,
       finishTyping: false,
       typemachine: "I'M A FRONTEND DEVELOPER. \nMY MAIN SKILLS ARE",
-      list: "WORDPRESS \nSCSS \nJAVASCRIPT \nVUE \nSVG ANIMATION",
+      list: "WORDPRESS \nSCSS \nJAVASCRIPT \nVUE \nREACT",
       scrolled: false
     };
   },
@@ -76,19 +75,18 @@ export default {
       this.scrolled = window.scrollY > 0;
     }
   },
-mounted() {
-  this.vantaEffect = NET({
-    el: "#test",
-  mouseControls: true,
-  touchControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00
-    // ...
-  });
-
-},
+  mounted() {
+    this.vantaEffect = NET({
+      el: "#test",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0
+      // ...
+    });
+  },
   created() {
     window.addEventListener("scroll", this.handleScroll);
   },
@@ -109,7 +107,7 @@ header {
 
 .list {
   font-size: 25px;
-    padding-left: 20px;
+  padding-left: 40px;
   text-align: left;
 }
 
@@ -191,7 +189,7 @@ header {
 .title-main {
   font-size: 55px;
   font-family: FuturaHeavy, "Helvetica Neue", Helvetica, sans-serif;
-  padding-left: 20px;
+  padding-left: 40px;
   text-align: left;
 }
 .arrow {
@@ -347,7 +345,7 @@ h3 {
 }
 
 @media only screen and (max-width: 320px) {
-  .timeline{
+  .timeline {
     padding-left: 1.5rem;
   }
 }
