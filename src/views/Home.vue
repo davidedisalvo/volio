@@ -7,7 +7,7 @@
       <div slot="cardContent">
         <p>
           Here's how I like to spend my free time.
-          <br />Some application that I've recently built to improve my Vue skills:
+          <br />Some application that I've recently built to improve my Vue and React skills:
         </p>
       </div>
       <div slot="cardContent"></div>
@@ -45,6 +45,18 @@
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
+            <h2>Recipes site with react and redux</h2>
+            <img
+              src="../assets/recipes-repo.png"
+              alt="Quantyst Home Page"
+              width="1280"
+              height="960"
+            />
+          </div>
+          <UnderCard :infos="infos[3]" link="https://react-recipe-site.netlify.app/" />
+        </div>
+        <div class="item portfolio tablet">
+          <div class="inner-box">
             <h2>English dictionary with react</h2>
             <img
               src="../assets/dictionary-repo.png"
@@ -53,36 +65,36 @@
               height="960"
             />
           </div>
-          <UnderCard :infos="infos[3]" link="https://dictionary-react.netlify.app" />
+          <UnderCard :infos="infos[4]" link="https://dictionary-react.netlify.app" />
         </div>
-        <div class="item portfolio tablet">
+        <!-- <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vue application with New York Time Api</h2>
             <img src="../assets/nyt-repo.png" alt="Quantyst Home Page" width="1280" height="960" />
           </div>
-          <UnderCard :infos="infos[4]" link="https://gallant-nobel-68373c.netlify.com/" />
-        </div>
+          <UnderCard :infos="infos[5]" link="https://gallant-nobel-68373c.netlify.com/" />
+        </div>-->
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vue application with Weather Api</h2>
             <img src="../assets/weather-repo.png" alt="Quantyst Info" width="1280" height="960" />
           </div>
-          <UnderCard :infos="infos[5]" link="https://elastic-borg-19684d.netlify.com/" />
+          <UnderCard :infos="infos[6]" link="https://elastic-borg-19684d.netlify.com/" />
         </div>
-        <div class="item portfolio tablet">
+        <!-- <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vue application with Nasa Api and combo filter</h2>
             <img src="../assets/nasa-repo.png" alt="Quantyst Info" width="1280" height="960" />
           </div>
-          <UnderCard :infos="infos[6]" link="https://kind-euler-997b22.netlify.com/" />
-        </div>
+          <UnderCard :infos="infos[7]" link="https://kind-euler-997b22.netlify.com/" />
+        </div>-->
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Vanilla Javascript application</h2>
             <img src="../assets/vanilla-repo.png" alt="Quantyst Contact" width="1280" height="960" />
           </div>
 
-          <UnderCard :infos="infos[7]" link="http://mywork.altervista.org/budgety/index.html" />
+          <UnderCard :infos="infos[8]" link="http://mywork.altervista.org/budgety/index.html" />
         </div>
       </Flickity>
     </Card>
@@ -90,7 +102,7 @@
     <Card id="mirage" class="dark card-mg desktop-visible">
       <h3 slot="cardTitle">Work experience</h3>
       <div slot="cardContent">
-        <p>I am a Junior Front End developer with industry experience building websites and web applications. I've got experience in Javascript, Wordpress and SVG animation. I also have experience working with Vue and I'd like to work with React and Vue in the near future.</p>
+        <p>I am a Front End developer with industry experience building websites and web applications. I've got experience in Javascript, Wordpress and SVG animation. I also have experience working with Vue and I'd like to work with React and Vue in the near future.</p>
       </div>
 
       <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
@@ -331,6 +343,10 @@ export default {
             "Scss",
             "Vuetify"
           ]
+        },
+        {
+          general: "React application with Redux",
+          technology: ["Redux", "Axios for API call", "Scss", "CSS modules"]
         },
         {
           general: "My first React application",
