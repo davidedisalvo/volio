@@ -24,13 +24,13 @@
           </div>
           <UnderCard :infos="infos[0]" link="https://boat-on-sale.netlify.com/" />
         </div>
-        <div class="item portfolio tablet">
+        <!-- <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Covid-19 tracker</h2>
             <img src="../assets/covid-repo.png" alt="Quantyst Home Page" width="1280" height="960" />
           </div>
           <UnderCard :infos="infos[1]" link="https://tracker-covid19.netlify.com/" />
-        </div>
+        </div>-->
         <div class="item portfolio tablet">
           <div class="inner-box">
             <h2>Front end for ecommerce</h2>
