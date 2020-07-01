@@ -14,6 +14,18 @@
       <Flickity slot="cardGallery" ref="flickity" :options="flickityOptions" class="gallery">
         <div class="item portfolio tablet">
           <div class="inner-box">
+            <h2>My first MERN app</h2>
+            <img
+              src="../assets/mern-api-repo.png"
+              alt="Quantyst Home Page"
+              width="1280"
+              height="960"
+            />
+          </div>
+          <UnderCard :infos="infos[0]" link="https://books-face.netlify.app/" />
+        </div>
+        <div class="item portfolio tablet">
+          <div class="inner-box">
             <h2>Sailboat store website</h2>
             <img
               src="../assets/sailboat-repo.png"
@@ -22,7 +34,7 @@
               height="960"
             />
           </div>
-          <UnderCard :infos="infos[0]" link="https://boat-on-sale.netlify.com/" />
+          <UnderCard :infos="infos[1]" link="https://boat-on-sale.netlify.com/" />
         </div>
         <!-- <div class="item portfolio tablet">
           <div class="inner-box">
@@ -41,7 +53,7 @@
               height="960"
             />
           </div>
-          <UnderCard :infos="infos[2]" link="https://ecommerce-example.netlify.com/" />
+          <UnderCard :infos="infos[3]" link="https://ecommerce-example.netlify.com/" />
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
@@ -53,7 +65,7 @@
               height="960"
             />
           </div>
-          <UnderCard :infos="infos[3]" link="https://react-recipe-site.netlify.app/" />
+          <UnderCard :infos="infos[4]" link="https://react-recipe-site.netlify.app/" />
         </div>
         <div class="item portfolio tablet">
           <div class="inner-box">
@@ -65,7 +77,7 @@
               height="960"
             />
           </div>
-          <UnderCard :infos="infos[4]" link="https://dictionary-react.netlify.app" />
+          <UnderCard :infos="infos[5]" link="https://dictionary-react.netlify.app" />
         </div>
         <!-- <div class="item portfolio tablet">
           <div class="inner-box">
@@ -79,7 +91,7 @@
             <h2>Vue application with Weather Api</h2>
             <img src="../assets/weather-repo.png" alt="Quantyst Info" width="1280" height="960" />
           </div>
-          <UnderCard :infos="infos[6]" link="https://elastic-borg-19684d.netlify.com/" />
+          <UnderCard :infos="infos[7]" link="https://elastic-borg-19684d.netlify.com/" />
         </div>
         <!-- <div class="item portfolio tablet">
           <div class="inner-box">
@@ -315,6 +327,16 @@ export default {
       },
       fullHeight: false,
       infos: [
+        {
+          general: "Full stack app with express react and mongodb",
+          technology: [
+            "React-hooks",
+            "mongoose",
+            "scss",
+            "google-book-api",
+            "express"
+          ]
+        },
         {
           general: "Playing with nuxt and wordpress API",
           technology: [
